@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Simple_animations</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simple_transition">Simple transition</string>
+    <string name="button">button</string>
+    <string name="text">text</string>
 </resources>
