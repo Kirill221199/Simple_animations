@@ -47,6 +47,10 @@ class MainFragment : Fragment() {
         binding.fragmentTrajectoryMove.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.container,TrajectoryMoveFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentObjectAnimator.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container,ObjectAnimatorFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {

@@ -8,4 +8,7 @@
     <string name="explode_transition">explode transition</string>
     <string name="crop_photo">crop photo</string>
     <string name="trajectory_move">trajectory move</string>
+    <string name="object_animator">object animator</string>
+    <string name="option_first">option 1</string>
+    <string name="option_second">option 2</string>
 </resources>
