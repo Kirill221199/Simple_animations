@@ -39,6 +39,10 @@ class MainFragment : Fragment() {
         binding.fragmentExplodeTrensition.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.container,ExplodeTransitionFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentCropPhoto.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container,CropPhotoFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {

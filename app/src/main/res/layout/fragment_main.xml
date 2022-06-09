@@ -26,4 +26,13 @@
         android:text="@string/explode_transition"
         android:textSize="20sp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_crop_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_button"
+        android:layout_marginEnd="@dimen/margin_button"
+        android:text="@string/crop_photo"
+        android:textSize="20sp" />
+
 </LinearLayout>

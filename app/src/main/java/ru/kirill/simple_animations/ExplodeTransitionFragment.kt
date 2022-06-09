@@ -67,13 +67,17 @@ class ExplodeTransitionFragment : Fragment() {
                 transitionExplode.duration = 3000
                 transitionExplode.excludeTarget(button, true) // исключаем кнопку из транзиции
 
+                val transitionFadeButton = Fade()
+                transitionFadeButton.duration = 3000
+
                 val transitionFade = Fade()
                 transitionFade.duration =
                     9999999999999 // устанавливаем чтобы кнопки не пропадала
 
                 val transitionSet = TransitionSet()
                 transitionSet.addTransition(transitionExplode)
-                transitionSet.addTransition(transitionFade)
+                transitionSet.addTransition(transitionFadeButton)
+                //transitionSet.addTransition(transitionFade)
 
                 TransitionManager.beginDelayedTransition(binding.recyclerView, transitionSet)
                 binding.recyclerView.adapter = null
