@@ -7,4 +7,5 @@
     <string name="click_here">click here</string>
     <string name="explode_transition">explode transition</string>
     <string name="crop_photo">crop photo</string>
+    <string name="trajectory_move">trajectory move</string>
 </resources>

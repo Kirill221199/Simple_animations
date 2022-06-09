@@ -43,6 +43,10 @@ class MainFragment : Fragment() {
         binding.fragmentCropPhoto.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.container,CropPhotoFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentTrajectoryMove.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container,TrajectoryMoveFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {
