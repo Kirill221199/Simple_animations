@@ -51,6 +51,10 @@ class MainFragment : Fragment() {
         binding.fragmentObjectAnimator.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.container,ObjectAnimatorFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentStateListAnimator.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container,StateListAnimatorFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {

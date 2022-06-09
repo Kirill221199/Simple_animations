@@ -11,4 +11,6 @@
     <string name="object_animator">object animator</string>
     <string name="option_first">option 1</string>
     <string name="option_second">option 2</string>
+    <string name="state_list_animator">state list animator</string>
+    <string name="text_state_list_animator">STATE LIST ANIMATOR</string>
 </resources>

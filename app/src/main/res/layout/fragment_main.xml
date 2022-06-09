@@ -53,5 +53,14 @@
         android:text="@string/object_animator"
         android:textSize="20sp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_state_list_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_button"
+        android:layout_marginEnd="@dimen/margin_button"
+        android:text="@string/state_list_animator"
+        android:textSize="20sp" />
+
 
 </LinearLayout>
