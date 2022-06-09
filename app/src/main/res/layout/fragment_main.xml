@@ -7,12 +7,23 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     android:gravity="center">
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fragment_simple_transition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_button"
         android:text="@string/simple_transition"
         android:layout_marginStart="@dimen/margin_button"
-        android:layout_marginEnd="@dimen/margin_button"/>
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_explode_trensition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_button"
+        android:layout_marginEnd="@dimen/margin_button"
+        android:text="@string/explode_transition"
+        android:textSize="20sp" />
 
 </LinearLayout>

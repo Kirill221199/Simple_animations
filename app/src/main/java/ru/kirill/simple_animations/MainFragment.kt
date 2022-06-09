@@ -35,6 +35,10 @@ class MainFragment : Fragment() {
         binding.fragmentSimpleTransition.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.container,SimpleTransitionFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentExplodeTrensition.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.container,ExplodeTransitionFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {

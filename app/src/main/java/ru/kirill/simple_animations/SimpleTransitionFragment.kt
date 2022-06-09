@@ -18,7 +18,7 @@ class SimpleTransitionFragment : Fragment() {
     private var _binding: FragmentSimpleTransitionBinding? = null
     private val binding get() = _binding!!
 
-    var isOpen: Boolean = false
+    private var isOpen: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

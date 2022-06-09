@@ -4,4 +4,6 @@
     <string name="simple_transition">Simple transition</string>
     <string name="button">button</string>
     <string name="text">text</string>
+    <string name="click_here">click here</string>
+    <string name="explode_transition">explode transition</string>
 </resources>
