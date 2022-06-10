@@ -49,6 +49,10 @@ class MainFragment : Fragment() {
             parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,TrajectoryMoveFragment.newInstance()).addToBackStack("").commit()
         }
 
+        binding.fragmentTrajectoryCircleMove.setOnClickListener {
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,TrajectoryCircleMoveFragment.newInstance()).addToBackStack("").commit()
+        }
+
         binding.fragmentObjectAnimator.setOnClickListener {
             parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,ObjectAnimatorFragment.newInstance()).addToBackStack("").commit()
         }

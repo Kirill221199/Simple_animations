@@ -1,5 +1,7 @@
 package ru.kirill.simple_animations
 
+import android.animation.ObjectAnimator
+import android.graphics.Path
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import androidx.transition.ArcMotion
 import androidx.transition.ChangeBounds
 import androidx.transition.TransitionManager
 import ru.kirill.simple_animations.databinding.FragmentTrajectoryMoveBinding
+
 
 class TrajectoryMoveFragment : Fragment() {
 

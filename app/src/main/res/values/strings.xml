@@ -17,4 +17,5 @@
     <string name="text_1">TEXT 1</string>
     <string name="text_2">TEXT 2</string>
     <string name="circular_animation_menu_button">circular animation button</string>
+    <string name="trajectory_circle_move">trajectory circle move</string>
 </resources>
