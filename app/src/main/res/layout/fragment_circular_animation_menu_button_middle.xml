@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/circular_container_end"
+    android:id="@+id/circular_container_middle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_circular_animation_menu_button"
@@ -26,9 +26,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="?colorPrimary"
         android:src="@drawable/ic_baseline_mode_standby_24"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintCircle="@id/main_fab"
-        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleAngle="270"
         app:layout_constraintCircleRadius="140dp"
         tools:ignore="MissingConstraints" />
 
@@ -38,9 +38,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="?colorPrimary"
         android:src="@drawable/ic_baseline_mode_standby_24"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintCircle="@id/main_fab"
-        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleAngle="315"
         app:layout_constraintCircleRadius="140dp"
         tools:ignore="MissingConstraints" />
 
@@ -50,9 +50,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="?colorPrimary"
         android:src="@drawable/ic_baseline_mode_standby_24"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintCircle="@id/main_fab"
-        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleAngle="0"
         app:layout_constraintCircleRadius="140dp"
         tools:ignore="MissingConstraints" />
 
@@ -62,9 +62,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="?colorPrimary"
         android:src="@drawable/ic_baseline_mode_standby_24"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintCircle="@id/main_fab"
-        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleAngle="45"
         app:layout_constraintCircleRadius="140dp"
         tools:ignore="MissingConstraints" />
 
@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="?colorPrimary"
         android:src="@drawable/ic_baseline_mode_standby_24"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintCircle="@id/main_fab"
         app:layout_constraintCircleAngle="90"
         app:layout_constraintCircleRadius="140dp"

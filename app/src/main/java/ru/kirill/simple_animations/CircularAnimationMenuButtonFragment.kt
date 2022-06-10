@@ -18,7 +18,7 @@ class CircularAnimationMenuButtonFragment : Fragment() {
     private var _binding: FragmentCircularAnimationMenuButtonStartBinding? = null
     private val binding get() = _binding!!
 
-    private var isOpen: Boolean = true
+    private var isOpen: Int = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,11 +42,22 @@ class CircularAnimationMenuButtonFragment : Fragment() {
     private fun circularAnimation(){
         binding.mainFab.setOnClickListener {
 
-            // создаём сеты констрейтов для начального и конечного положения кнопок на экране (клонировав макеты)
+            // создаём сеты констрейтов для начального среднего и конечного положения кнопок на экране (клонировав макеты)
             val constraintSetStart = ConstraintSet()
-            constraintSetStart.clone(requireContext(), R.layout.fragment_circular_animation_menu_button_start)
+            constraintSetStart.clone(
+                requireContext(),
+                R.layout.fragment_circular_animation_menu_button_start
+            )
+            val constraintSetMiddle = ConstraintSet()
+            constraintSetMiddle.clone(
+                requireContext(),
+                R.layout.fragment_circular_animation_menu_button_middle
+            )
             val constraintSetEnd = ConstraintSet()
-            constraintSetEnd.clone(requireContext(), R.layout.fragment_circular_animation_menu_button_end)
+            constraintSetEnd.clone(
+                requireContext(),
+                R.layout.fragment_circular_animation_menu_button_end
+            )
 
             // настраиваем сет транзиций
             val transitionChangeBounds = ChangeBounds()
@@ -61,13 +72,25 @@ class CircularAnimationMenuButtonFragment : Fragment() {
 
             TransitionManager.beginDelayedTransition(binding.root, transitionSet)
 
-            if(isOpen){
-                constraintSetEnd.applyTo(binding.root)
-            }else{
-                constraintSetStart.applyTo(binding.root)
+            // переключаем состояния в зависимости от ситуации
+            when (isOpen){
+                1 -> {
+                    constraintSetMiddle.applyTo(binding.root)
+                    isOpen = 2
+                }
+                2 -> {
+                    constraintSetEnd.applyTo(binding.root)
+                    isOpen = 3
+                }
+                3 -> {
+                    constraintSetMiddle.applyTo(binding.root)
+                    isOpen = 4
+                }
+                4 -> {
+                    constraintSetStart.applyTo(binding.root)
+                    isOpen = 1
+                }
             }
-
-            isOpen = !isOpen
         }
     }
 
