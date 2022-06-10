@@ -60,6 +60,10 @@ class MainFragment : Fragment() {
         binding.fragmentConstraintSet.setOnClickListener {
             parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,ConstraintSetFragment.newInstance()).addToBackStack("").commit()
         }
+
+        binding.fragmentCircularAnimationMenuButton.setOnClickListener {
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,CircularAnimationMenuButtonFragment.newInstance()).addToBackStack("").commit()
+        }
     }
 
     companion object {

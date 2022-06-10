@@ -16,4 +16,5 @@
     <string name="constraint_set">constraint set</string>
     <string name="text_1">TEXT 1</string>
     <string name="text_2">TEXT 2</string>
+    <string name="circular_animation_menu_button">circular animation button</string>
 </resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/circular_container_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_circular_animation_menu_button"
+    tools:context=".CircularAnimationMenuButtonFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_plus_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/first_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_baseline_mode_standby_24"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@id/main_fab"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/second_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_baseline_mode_standby_24"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@id/main_fab"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/third_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_baseline_mode_standby_24"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@id/main_fab"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fourth_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_baseline_mode_standby_24"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@id/main_fab"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fifth_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:src="@drawable/ic_baseline_mode_standby_24"
+        android:visibility="invisible"
+        app:layout_constraintCircle="@id/main_fab"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="140dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
