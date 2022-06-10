@@ -14,8 +14,8 @@
     <string name="state_list_animator">state list animator</string>
     <string name="text_state_list_animator">STATE LIST ANIMATOR</string>
     <string name="constraint_set">constraint set</string>
-    <string name="text_1">TEXT 1</string>
-    <string name="text_2">TEXT 2</string>
+    <string name="text_1">PICTURE\nLANDSCAPE</string>
+    <string name="text_2">this picture shows the gradient of the sky, an excellent mountain landscape, and several ducks swimming on the lake</string>
     <string name="circular_animation_menu_button">circular animation button</string>
     <string name="trajectory_circle_move">trajectory circle move</string>
 </resources>

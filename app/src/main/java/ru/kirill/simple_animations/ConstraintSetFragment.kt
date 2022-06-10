@@ -1,15 +1,19 @@
 package ru.kirill.simple_animations
 
 import android.os.Bundle
+import android.text.style.RelativeSizeSpan
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnticipateInterpolator
+import android.view.animation.BounceInterpolator
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.transition.ChangeBounds
+import androidx.transition.CircularPropagation
 import androidx.transition.TransitionManager
+import com.google.android.material.shape.RelativeCornerSize
 import ru.kirill.simple_animations.databinding.FragmentConstraintSetBinding
 import ru.kirill.simple_animations.databinding.FragmentMainBinding
 
@@ -46,7 +50,7 @@ class ConstraintSetFragment : Fragment() {
             constraintSet.clone(binding.container)
 
             val transition = ChangeBounds()
-            transition.interpolator = AnticipateInterpolator(5f)
+            transition.interpolator = BounceInterpolator()
             transition.duration = 1000
             TransitionManager.beginDelayedTransition(binding.container, transition)
 
