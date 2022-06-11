@@ -1,4 +1,4 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager
 
 import android.os.Bundle
 import android.transition.ChangeBounds
@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnticipateOvershootInterpolator
 import androidx.fragment.app.Fragment
-import androidx.transition.Slide
 import ru.kirill.simple_animations.databinding.FragmentSimpleTransitionBinding
 
 class SimpleTransitionFragment : Fragment() {

@@ -1,4 +1,4 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager
 
 import android.annotation.SuppressLint
 import android.os.Bundle

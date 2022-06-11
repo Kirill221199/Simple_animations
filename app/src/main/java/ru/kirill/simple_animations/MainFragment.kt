@@ -6,7 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
+import ru.kirill.simple_animations.transitionmanager.constraintset.ConstraintSetFragment
 import ru.kirill.simple_animations.databinding.FragmentMainBinding
+import ru.kirill.simple_animations.objectanimator.ObjectAnimatorFragment
+import ru.kirill.simple_animations.objectanimator.TrajectoryCircleMoveFragment
+import ru.kirill.simple_animations.statelistanimator.StateListAnimatorFragment
+import ru.kirill.simple_animations.transitionmanager.*
+import ru.kirill.simple_animations.transitionmanager.constraintset.CircularAnimationMenuButtonFragment
 
 class MainFragment : Fragment() {
 
@@ -34,39 +40,48 @@ class MainFragment : Fragment() {
 
     private fun chooseAnimationFragment(){
         binding.fragmentSimpleTransition.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,SimpleTransitionFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                SimpleTransitionFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentExplodeTrensition.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,ExplodeTransitionFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                ExplodeTransitionFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentCropPhoto.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,CropPhotoFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                CropPhotoFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentTrajectoryMove.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,TrajectoryMoveFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                TrajectoryMoveFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentTrajectoryCircleMove.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,TrajectoryCircleMoveFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                TrajectoryCircleMoveFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentObjectAnimator.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,ObjectAnimatorFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                ObjectAnimatorFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentStateListAnimator.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,StateListAnimatorFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                StateListAnimatorFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentConstraintSet.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,ConstraintSetFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                ConstraintSetFragment.newInstance()).addToBackStack("").commit()
         }
 
         binding.fragmentCircularAnimationMenuButton.setOnClickListener {
-            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,CircularAnimationMenuButtonFragment.newInstance()).addToBackStack("").commit()
+            parentFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).replace(R.id.container,
+                CircularAnimationMenuButtonFragment.newInstance()).addToBackStack("").commit()
         }
     }
 

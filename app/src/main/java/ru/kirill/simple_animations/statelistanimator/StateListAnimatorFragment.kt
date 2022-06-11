@@ -1,11 +1,10 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.statelistanimator
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ru.kirill.simple_animations.databinding.FragmentMainBinding
 import ru.kirill.simple_animations.databinding.FragmentStateListAnimatorBinding
 
 class StateListAnimatorFragment : Fragment() {

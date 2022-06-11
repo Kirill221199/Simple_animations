@@ -1,4 +1,4 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.objectanimator
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ru.kirill.simple_animations.databinding.FragmentObjectAnimatorBinding
-import ru.kirill.simple_animations.databinding.FragmentTrajectoryMoveBinding
 
 class ObjectAnimatorFragment : Fragment() {
 
@@ -76,11 +75,11 @@ class ObjectAnimatorFragment : Fragment() {
                     .alpha(0.5f)
                     .setDuration(duration)
             } else {
-                ObjectAnimator.ofFloat(binding.plusImageview, View.ROTATION, 405f, 0f)
+                ObjectAnimator.ofFloat(binding.plusImageview, View.ROTATION, 225f, 0f)
                     .setDuration(duration).start()
-                ObjectAnimator.ofFloat(binding.optionFirstContainer, View.TRANSLATION_Y, -260f, -50f)
+                ObjectAnimator.ofFloat(binding.optionFirstContainer, View.TRANSLATION_Y, 0f)
                     .setDuration(duration).start()
-                ObjectAnimator.ofFloat(binding.optionSecondContainer, View.TRANSLATION_Y, -130f, -20f)
+                ObjectAnimator.ofFloat(binding.optionSecondContainer, View.TRANSLATION_Y, 0f)
                     .setDuration(duration).start()
 
                 // анимация "заползпния"
@@ -97,7 +96,7 @@ class ObjectAnimatorFragment : Fragment() {
                 // анимация "заползпния"
                 binding.optionSecondContainer.animate()
                     .alpha(0f)
-                    .setDuration(duration / 2)
+                    .setDuration((duration / 1.5).toLong())
                     .setListener(object : AnimatorListenerAdapter() {
                         override fun onAnimationEnd(animation: Animator?) {
                             super.onAnimationEnd(animation)
@@ -105,7 +104,7 @@ class ObjectAnimatorFragment : Fragment() {
                         }
                     })
 
-                // изменение альфы (занкляем альфу при втором нажатии на кнопку)
+                // изменение альфы (зануляем альфу при втором нажатии на кнопку)
                 binding.transparentBackground.animate()
                     .alpha(0f)
                     .setDuration(duration)

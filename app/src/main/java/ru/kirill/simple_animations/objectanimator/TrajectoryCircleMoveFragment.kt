@@ -1,20 +1,14 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.objectanimator
 
 import android.animation.ObjectAnimator
 import android.graphics.Path
 import android.os.Bundle
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.BounceInterpolator
-import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
-import androidx.transition.ArcMotion
-import androidx.transition.ChangeBounds
-import androidx.transition.TransitionManager
 import ru.kirill.simple_animations.databinding.FragmentTrajectoryCircleMoveBinding
-import ru.kirill.simple_animations.databinding.FragmentTrajectoryMoveBinding
 
 
 class TrajectoryCircleMoveFragment : Fragment() {

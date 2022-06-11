@@ -1,21 +1,16 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager.constraintset
 
 import android.os.Bundle
-import android.text.style.RelativeSizeSpan
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnticipateInterpolator
 import android.view.animation.BounceInterpolator
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.transition.ChangeBounds
-import androidx.transition.CircularPropagation
 import androidx.transition.TransitionManager
-import com.google.android.material.shape.RelativeCornerSize
+import ru.kirill.simple_animations.R
 import ru.kirill.simple_animations.databinding.FragmentConstraintSetBinding
-import ru.kirill.simple_animations.databinding.FragmentMainBinding
 
 class ConstraintSetFragment : Fragment() {
 
@@ -55,11 +50,17 @@ class ConstraintSetFragment : Fragment() {
             TransitionManager.beginDelayedTransition(binding.container, transition)
 
             if(isOpen){
-                constraintSet.connect(R.id.text_one, ConstraintSet.RIGHT, R.id.background, ConstraintSet.RIGHT)
+                constraintSet.connect(
+                    R.id.text_one, ConstraintSet.RIGHT,
+                    R.id.background, ConstraintSet.RIGHT)
                 constraintSet.connect(R.id.text_two, ConstraintSet.TOP, R.id.button, ConstraintSet.BOTTOM)
             }else{
-                constraintSet.connect(R.id.text_one, ConstraintSet. RIGHT, R.id.background, ConstraintSet.LEFT)
-                constraintSet.connect(R.id.text_two, ConstraintSet.TOP, R.id.background, ConstraintSet.BOTTOM)
+                constraintSet.connect(
+                    R.id.text_one, ConstraintSet. RIGHT,
+                    R.id.background, ConstraintSet.LEFT)
+                constraintSet.connect(
+                    R.id.text_two, ConstraintSet.TOP,
+                    R.id.background, ConstraintSet.BOTTOM)
             }
 
             constraintSet.applyTo(binding.container)

@@ -1,7 +1,5 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager
 
-import android.animation.ObjectAnimator
-import android.graphics.Path
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater

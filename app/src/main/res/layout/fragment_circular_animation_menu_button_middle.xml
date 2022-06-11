@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_circular_animation_menu_button"
-    tools:context=".CircularAnimationMenuButtonFragment">
+    tools:context=".transitionmanager.constraintset.CircularAnimationMenuButtonFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_fab"

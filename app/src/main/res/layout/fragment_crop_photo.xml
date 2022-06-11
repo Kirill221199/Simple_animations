@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CropPhotoFragment"
+    tools:context=".transitionmanager.CropPhotoFragment"
     android:background="@drawable/background_crop_photo">
 
     <androidx.appcompat.widget.AppCompatImageView

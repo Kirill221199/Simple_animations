@@ -1,4 +1,4 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager.constraintset
 
 import android.os.Bundle
 import android.transition.ChangeBounds
@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.view.animation.AnticipateOvershootInterpolator
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.fragment.app.Fragment
+import ru.kirill.simple_animations.R
 import ru.kirill.simple_animations.databinding.FragmentCircularAnimationMenuButtonStartBinding
 
 class CircularAnimationMenuButtonFragment : Fragment() {

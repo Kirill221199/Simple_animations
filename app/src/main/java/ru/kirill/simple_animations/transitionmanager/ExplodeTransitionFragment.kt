@@ -1,4 +1,4 @@
-package ru.kirill.simple_animations
+package ru.kirill.simple_animations.transitionmanager
 
 import android.graphics.Rect
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.*
+import ru.kirill.simple_animations.R
 import ru.kirill.simple_animations.databinding.FragmentExplodeTransitionBinding
 
 class ExplodeTransitionFragment : Fragment() {
